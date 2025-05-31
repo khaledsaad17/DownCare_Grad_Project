@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors | DownCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Playwrite+AR:wght@100..400&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+FR+Trad:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/our-doctors.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                DownCare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-Down-Syndrome.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="our-Doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-DownCare.html">About App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="doctors-section">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Our Specialist Doctors</h1>
+                    <p>Meet our team of pediatric care specialists</p>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="doctor-search" placeholder="Search by name or location...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div id="error-message" class="error-message"></div>
+
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading doctors...</p>
+                </div>
+
+                <div id="doctors-container" class="doctors-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DownCare</h3>
+                    <p>Empowering families and professionals in the journey of caring for individuals with Down syndrome.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="our-Doctors.html">Our Doctors</a>
+                    <a href="Games.html">Educational Games</a>
+                    <a href="About DownCare.html">About application</a>
+                </div>
+                <div class="footer-section">
+                    <h3>More Info</h3>
+                    <p>for more informations visit the International Down Syndrome Foundation or get more information from 
+                        <a href="About Down Syndrome.html">"About Down Syndrome"</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DownCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/our-doctors.js"></script>
+    <script src="js/nav-bar.js"></script>
+</body>
+</html>

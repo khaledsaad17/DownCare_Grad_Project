@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy and sad</title>
+    <link rel="stylesheet" href="css/Happy-and-sad.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen" id="startScreen">
+            <h2>لعبة فرحان وزعلان</h2>
+            <p>تعالى نخمن سوا انا حاسس بأيه!</p>
+            <button class="start-btn" id="startBtn">يلا نلعب</button>
+        </div>
+        
+        <div class="game-area hidden" id="gameArea">
+            <h1>تفتكر انا حاسس بأيه؟</h1>
+            
+            <div class="emoji-container" id="emojiContainer">😊</div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <div class="options" id="optionsContainer">
+            </div>
+            
+            <div class="attempts" id="attemptsContainer">
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+                <span class="heart">❤</span>
+            </div>
+            
+            <div class="score-container">
+                <div>النقاط: <span id="score">0</span></div>
+                <div>أفضل نتيجة: <span id="bestScore">0</span></div>
+            </div>
+        </div>
+        
+        <div class="game-over hidden" id="gameOver">
+            <h2>انتهت اللعبة!</h2>
+            <p>النقط الى انت جمعتها: <span id="finalScore">0</span></p>
+            <p>أفضل نتيجة: <span id="finalBestScore">0</span></p>
+            <button class="restart-btn" id="restartBtn">العب تانى</button>
+        </div>
+    </div>
+
+    <script src="js/Happy and Sad.js">
+
+    </script>
+</body>
+</html>

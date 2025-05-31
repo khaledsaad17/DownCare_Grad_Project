@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownCare - Learning Games</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Playwrite+AR:wght@100..400&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+FR+Trad:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/Games-Style.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/root.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                DownCare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-Down-Syndrome.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="our-Doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-DownCare.html">About App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Games Hero Section -->
+    <section class="games-hero">
+        <div class="container">
+            <h1>Learning Through Play</h1>
+            <p>Discover our collection of fun, educational games designed specifically to help children with Down syndrome develop essential skills while having fun!</p>
+            <a href="#games" class="btn btn-warning btn-lg">Explore Games</a>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Educational Games</h2>
+            </div>
+            
+            <div class="row">
+                <!-- Happy and Sad Game -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card game-card">
+                        <span class="game-badge">Emotional Skills</span>
+                        <img src="img/happy and sad.jpg" class="card-img-top" alt="Happy and Sad Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Happy & Sad</h5>
+                            <p class="card-text">Help children recognize and understand different emotions through interactive scenarios and facial expressions.</p>
+                            <button class="btn play-btn" data-bs-toggle="modal" data-bs-target="#happySadModal">
+                                Play Now <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scrambled Words Game -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card game-card">
+                        <span class="game-badge">Language Skills</span>
+                        <img src="img/scrambled word.jpeg" class="card-img-top" alt="Scrambled Words Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Scrambled Words</h5>
+                            <p class="card-text">Improve vocabulary and spelling by unscrambling letters to form meaningful words with visual hints.</p>
+                            <button class="btn play-btn" data-bs-toggle="modal" data-bs-target="#scrambledWordsModal">
+                                Play Now <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Try to Collect Game -->
+                <!-- <div class="col-lg-4 col-md-6">
+                    <div class="card game-card">
+                        <span class="game-badge">Cognitive Skills</span>
+                        <img src="https://images.unsplash.com/photo-1541692641319-981cc79ee10a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Try to Collect Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Try to Collect</h5>
+                            <p class="card-text">Develop memory and matching skills by collecting pairs of related objects in this engaging game.</p>
+                            <button class="btn play-btn" data-bs-toggle="modal" data-bs-target="#tryToCollectModal">
+                                Play Now <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modals -->
+    <!-- Happy and Sad Modal -->
+    <div class="modal fade game-modal" id="happySadModal" tabindex="-1" aria-labelledby="happySadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="happySadModalLabel">Happy & Sad Game</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="Happy and sad.html" title="Happy and Sad Game"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scrambled Words Modal -->
+    <div class="modal fade game-modal" id="scrambledWordsModal" tabindex="-1" aria-labelledby="scrambledWordsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scrambledWordsModalLabel">Scrambled Words Game</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="Scrambled words.html" title="Scrambled Words Game"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of Our Games</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-emoji-smile"></i>
+                        </div>
+                        <h3>Emotional Development</h3>
+                        <p>Our games help children recognize and express emotions, building emotional intelligence and social skills.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-chat-square-text"></i>
+                        </div>
+                        <h3>Language Skills</h3>
+                        <p>Interactive games enhance vocabulary, pronunciation, and communication abilities in a fun environment.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h3>Cognitive Growth</h3>
+                        <p>Games stimulate memory, problem-solving, and decision-making skills through engaging challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DownCare</h3>
+                    <p>Empowering families and professionals in the journey of caring for individuals with Down syndrome.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="our-Doctors.html">Our Doctors</a>
+                    <a href="Games.html">Educational Games</a>
+                    <a href="About DownCare.html">About application</a>
+                </div>
+                <div class="footer-section">
+                    <h3>More Info</h3>
+                    <p>for more informations visit the International Down Syndrome Foundation or get more information from 
+                        <a href="About Down Syndrome.html">"About Down Syndrome"</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DownCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/nav-bar.js"></script>
+</body>
+</html>
