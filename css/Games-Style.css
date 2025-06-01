@@ -1,16 +1,15 @@
+:root {
+    --blue: #205ba7;
+    --yellow: #ffff00;
+    --orange: #f0ad4e;
+    --light-bg: #f8f9fa;
+    --dark-text: #333;
+    --light-text: #fff;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-:root {
-    --blue: #205ba7;
-    --yellow: #ffff01;
-    --white: #ffffff;
-    --black: #000000;
-    --gray: #f5f7fa;
-    --dark-blue: #16447d;
-    --light-blue: #e6f0fd;
 }
 body {
     background-color: var(--gray);
@@ -48,7 +47,9 @@ body {
 }
 /* Games Hero Section */
 .games-hero {
-    background: linear-gradient(135deg, rgba(32, 91, 167, 0.9), rgba(22, 68, 125, 0.9)), url('../img/pexels-photo-6288105.jpeg') center/cover;
+    background: linear-gradient(135deg, rgba(32, 91, 167, 0.9), 
+    rgba(22, 68, 125, 0.9)), 
+    url('../img/pexels-photo-6288105.jpeg') center/cover;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -158,6 +159,7 @@ body {
     border-radius: 15px;
     overflow: hidden;
     border: none;
+
 }
 .game-modal .modal-header {
     background-color: var(--dark-blue);

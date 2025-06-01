@@ -5,11 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active class from all buttons and contents
             tabBtns.forEach(btn => btn.classList.remove('active'));
             tabContents.forEach(content => content.classList.remove('active'));
             
-            // Add active class to clicked button and corresponding content
             btn.classList.add('active');
             const tabId = btn.getAttribute('data-tab');
             document.getElementById(tabId).classList.add('active');
@@ -18,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
-    
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         
@@ -32,8 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
         });
     });
-    
-    // Animation on Scroll
     const animateOnScroll = () => {
         const elements = document.querySelectorAll('.feature-card, .step-card, .faq-item');
         
@@ -48,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
     
-    // Set initial state for animation
     document.querySelectorAll('.feature-card, .step-card, .faq-item').forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
@@ -57,16 +51,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('scroll', animateOnScroll);
     window.addEventListener('load', animateOnScroll);
-    
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        
-        // Check if the page is scrolled more than 50px
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
 });

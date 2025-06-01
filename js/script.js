@@ -52,7 +52,6 @@ class ApiService {
     }
 }
 
-// دالة تنسيق التاريخ بصيغة يوم/شهر/سنة
 function formatDate(dateString) {
     if (!dateString) return '';
     const date = new Date(dateString);

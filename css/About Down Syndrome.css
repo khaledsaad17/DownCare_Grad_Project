@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 :root {
     --blue: #205ba7;
     --yellow: #ffff01;
@@ -12,6 +6,12 @@
     --gray: #f5f7fa;
     --dark-blue: #16447d;
     --light-blue: #e6f0fd;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     background-color: var(--gray);

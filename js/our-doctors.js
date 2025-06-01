@@ -1,4 +1,3 @@
-// API endpoint for doctors data
 const DOCTORS_API = 'http://downcare.runasp.net/api/User/Doctors';
 
 // Page elements
@@ -25,16 +24,13 @@ async function getDoctors() {
     }
 }
 
-// Display doctors with optional filtering
-function displayDoctors(doctors, filteredDoctors = null) {
-    const doctorsToShow = filteredDoctors || doctors;
-    
-    if (!doctorsToShow || doctorsToShow.length === 0) {
+// Display doctors
+function displayDoctors(doctors) {
+    if (!doctors || doctors.length === 0) {
         elements.container.innerHTML = noDoctorsMessage();
         return;
     }
-    
-    elements.container.innerHTML = doctorsToShow.map(doctor => createDoctorCard(doctor)).join('');
+    elements.container.innerHTML = doctors.map(doctor => createDoctorCard(doctor)).join('');
 }
 
 // Setup search functionality
@@ -51,14 +47,12 @@ function setupSearch(doctors) {
     });
 }
 
-// Create doctor card HTML with 3D flip effect
 function createDoctorCard(doctor) {
     const defaultImage = 'img/default-article.jpg';
     let doctorImage = doctor.imagePath 
         ? `http://downcare.runasp.net/${doctor.imagePath}` 
         : defaultImage;
 
-    // Validate image URL
     if (!isValidImageUrl(doctorImage)) {
         doctorImage = defaultImage;
     }
@@ -109,7 +103,6 @@ function isValidImageUrl(url) {
     }
 }
 
-// No doctors message
 function noDoctorsMessage() {
     return `
         <div class="no-doctors">
@@ -120,7 +113,6 @@ function noDoctorsMessage() {
     `;
 }
 
-// Helper functions
 function showLoading(show) {
     elements.loading.style.display = show ? 'flex' : 'none';
     if (show) {
@@ -136,5 +128,4 @@ function showError(message) {
     }, 5000);
 }
 
-// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', getDoctors);

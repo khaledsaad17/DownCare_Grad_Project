@@ -1,19 +1,15 @@
 :root {
-    --blue: #1a4b8f;
-    --light-blue: #d3e5ff;
-    --yellow: #ffd700;
-    --light-bg: #ffffff;
-    --dark-text: #333333;
-    --gray: #f5f5f5;
-    --white: #ffffff;
-    --black: #000000;
+    --blue: #205ba7;
+    --yellow: #ffff00;
+    --orange: #f0ad4e;
+    --light-bg: #f8f9fa;
+    --dark-text: #333;
+    --light-text: #fff;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
