@@ -97,7 +97,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.about-text h2:after {
+/* .about-text h2:after {
     content: '';
     position: absolute;
     width: 80px;
@@ -105,7 +105,7 @@ body {
     background: var(--orange);
     bottom: -210px;
     right: 660px;
-}
+} */
 
 .about-text p {
     color: var(--dark-text);
