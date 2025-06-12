@@ -80,10 +80,10 @@ function createDoctorCard(doctor) {
                     <h3>Contact This Doctor</h3>
                     <p>To contact DR.${doctor.name || 'this doctor'}, please download our application for direct communication.</p>
                     <div class="app-buttons">
-                        <button class="download-btn">
+                        <a href="https://drive.google.com/file/d/1HoVhN5Wv2JAVPRxV5Bt9s4lBA5qsnI3o/view?usp=drive_link" target="_blank" class="download-btn">
                             <i class="fas fa-download"></i> Download Now
-                        </button>
-                        <a href="About DownCare.html" class="details-btn">
+                        </a>
+                        <a href="About-DownCare.html" class="details-btn">
                             <i class="fas fa-info-circle"></i> App Details
                         </a>
                     </div>

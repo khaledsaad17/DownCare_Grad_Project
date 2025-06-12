@@ -223,6 +223,7 @@ body {
     justify-content: center;
     gap: 0.7rem;
     font-size: 0.95rem;
+    text-decoration: none;
 }
 .download-btn {
     background-color: var(--primary-color);
@@ -236,7 +237,6 @@ body {
 .details-btn {
     background-color: var(--accent-color);
     color: var(--dark-text);
-    text-decoration: none;
 }
 .details-btn:hover {
     background-color: #e09e3e;

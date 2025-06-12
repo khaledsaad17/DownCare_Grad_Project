@@ -25,7 +25,7 @@ class HeroCarousel {
 }
 
 class ApiService {
-    static BASE_URL = 'http://downcare.runasp.net/api';
+    static BASE_URL = 'https://downcare.azurewebsites.net/api';
 
     static ENDPOINTS = {
         FEEDBACK: '/Feedback',
