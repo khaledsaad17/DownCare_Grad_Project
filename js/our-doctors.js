@@ -1,4 +1,4 @@
-const DOCTORS_API = 'http://downcare.runasp.net/api/User/Doctors';
+const DOCTORS_API = 'https://downcare.azurewebsites.net/api/User/Doctors';
 
 // Page elements
 const elements = {

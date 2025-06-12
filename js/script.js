@@ -142,9 +142,8 @@ class FeedbackSlider extends BaseSlider {
         this.container.innerHTML = this.slides
             .map((feedback, index) => {
                 const date = feedback.dateTime ? formatDate(feedback.dateTime) : '';
-                const avatarHtml = feedback.imageUrl
-                    ? `<img src="${feedback.imageUrl}" alt="${feedback.name || 'User'}" class="author-avatar feedback-avatar">`
-                    : `<img src="img/default-article.jpg" alt="Default User" class="author-avatar feedback-avatar">`;
+                // Always use default photo for feedback
+                const avatarHtml = `<img src="img/default-article.jpg" alt="Default User" class="author-avatar feedback-avatar">`;
 
                 return `
           <div class="feedback-slide ${index === 0 ? 'active' : ''}">
@@ -217,11 +216,12 @@ class ArticlesSlider extends BaseSlider {
         this.container.innerHTML = this.slides
             .map((article) => {
                 const date = article.dateTime ? formatDate(article.dateTime) : 'No date';
+                // Always use default photo for articles
                 return `
           <div class="article-slide">
             <div class="article-card">
               <div class="article-image">
-                <img src="${article.imageUrl || 'img/default-article.jpg'}" alt="${article.title}" loading="lazy">
+                <img src="img/default-article.jpg" alt="${article.title}" loading="lazy">
               </div>
               <div class="article-content">
                 <h3 class="article-title">Article</h3>

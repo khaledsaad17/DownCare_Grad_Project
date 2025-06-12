@@ -262,6 +262,18 @@ body {
     color: var(--dark-text);
     font-size: 1.1rem;
 }
+.doctor-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 auto;
+}
 /* Responsive Styles */
 @media (max-width: 992px) {
     .doctors-grid {
