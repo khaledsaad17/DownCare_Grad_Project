@@ -36,10 +36,17 @@ DownCare aims to make life easier for mothers raising children with Down Syndrom
 
 ---
 
-## 📸 Screens & Demo
+## 📸 Demo & Screenshots
 
 Visit the live website to explore the project, download the app, and see more details:  
 👉 [DownCare Website](https://emann2.github.io/DownCare/index.html)
+
+### Screenshots
+*(You can add actual screenshots here)*
+
+![Website Screenshot](assets/website-screenshot.png)  
+![Mobile App Screenshot](assets/app-screenshot.png)  
+![Game Screenshot](assets/game-screenshot.png)  
 
 ---
 
@@ -47,23 +54,17 @@ Visit the live website to explore the project, download the app, and see more de
 
 - **Frontend (Website):** HTML, CSS, JavaScript  
 - **Mobile App:** Flutter  
-- **Backend:** ASP .NET (C#)  
+- **Backend:** FastAPI (Python)  
 - **Games:** Unity (C#)  
 - **Database:** MySQL  
 
 ---
 
-## 👨‍💻 Team
-
-- **Khaled Saad** — Backend Developer (FastAPI)  
-- **[Your Teammate’s Name]** — Frontend/Mobile Developer (Flutter)  
-
----
-
 ## 📌 Note
 
-This repository only contains the **Backend code**.  
+- This repository only contains the **Backend code**.  
 - The **APK file** for the mobile app is available on the [Website](https://emann2.github.io/DownCare/index.html).  
 - The website itself demonstrates the project idea and its impact.  
+- 👉 You can check the backend code repository here: [DownCare Backend Repo](https://github.com/khaledsaad17/DownCare_backend)  
 
 ---
