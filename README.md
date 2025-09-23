@@ -54,7 +54,7 @@ Visit the live website to explore the project, download the app, and see more de
 
 - **Frontend (Website):** HTML, CSS, JavaScript  
 - **Mobile App:** Flutter  
-- **Backend:** FastAPI (Python)  
+- **Backend:** ASP .NET (C#)  
 - **Games:** Unity (C#)  
 - **Database:** MySQL  
 
