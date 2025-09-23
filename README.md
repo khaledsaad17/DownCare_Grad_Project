@@ -44,9 +44,9 @@ Visit the live website to explore the project, download the app, and see more de
 ### Screenshots
 *(You can add actual screenshots here)*
 
-![Website Screenshot](assets/1.png)  
+![Website Screenshot](assets/3.png)  
 ![Mobile App Screenshot](assets/2.png)  
-![Game Screenshot](assets/3.png)  
+![Game Screenshot](assets/1.png)  
 
 ---
 
