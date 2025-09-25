@@ -42,7 +42,7 @@ Visit the live website to explore the project, download the app, and see more de
 👉 [DownCare Website](https://emann2.github.io/DownCare/index.html)
 
 ### Screenshots
-*(You can add actual screenshots here)*
+
 
 ![Website Screenshot](assets/3.png)  
 ![Mobile App Screenshot](assets/2.png)  
